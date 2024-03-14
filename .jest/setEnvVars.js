@@ -1,0 +1,9 @@
+process.env.PORT = 3000;
+process.env.CANDIDATE_ID = 'abc';
+process.env.API_URL = 'http://localhost';
+process.env.API_REQUEST_DELAY_MS = 1000;
+process.env.API_RETRIES = 3;
+process.env.API_BACKOFF_MS = 3000;
+process.env.DIAGONAL_LENGTH = 7;
+process.env.LINE_A_START_ROW = 2;
+process.env.LINE_B_START_ROW = 8;
