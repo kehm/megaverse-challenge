@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  app:
+    container_name: app.megaverse
+    image: megaverse/app:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      LOG_LEVEL: info
+      CANDIDATE_ID: abc
+      API_URL: https://abc.abc.io/api
+      API_REQUEST_DELAY_MS: 1000
+      API_RETRIES: 3
+      API_BACKOFF_MS: 3000
+      DIAGONAL_LENGTH: 7
+      LINE_A_START_ROW: 2
+      LINE_B_START_ROW: 8
+    ports:
+      - 3000:3000

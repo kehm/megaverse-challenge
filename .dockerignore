@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+
+# Log
+*.log
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
+# Test
+.jest.config.js
+coverage/
+src/**/*.test.ts
+
+# Misc
+*.postman_collection.json
+docker-compose.yaml
